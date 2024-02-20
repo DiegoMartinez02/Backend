@@ -1,0 +1,137 @@
+[
+    {
+        "title": "Caña de pescar",
+        "description": "Caña para pesca de gran calidad",
+        "price": 10000,
+        "thumbnail": "linkdeimagen",
+        "code": "8010",
+        "stock": 8,
+        "id": 1
+    },
+    {
+        "title": "Balde",
+        "description": "Balde de plástico resistente",
+        "price": 250,
+        "thumbnail": "linkdeimagen",
+        "code": "8011",
+        "stock": 5,
+        "id": 2
+    },
+    {
+        "title": "Caja de herramientas Premium",
+        "description": "Incluye todo lo necesario y de la más alta calidad",
+        "price": 7500,
+        "thumbnail": "linkdeimagen",
+        "code": "8012",
+        "stock": 12,
+        "id": 3
+    },
+    {
+        "title": "Silla de playa",
+        "description": "Silla plegable para relajarse en la playa",
+        "price": 500,
+        "thumbnail": "linkdeimagen",
+        "code": "8013",
+        "stock": 20,
+        "id": 4
+    },
+    {
+        "title": "Linterna LED",
+        "description": "Linterna portátil con tecnología LED",
+        "price": 1500,
+        "thumbnail": "linkdeimagen",
+        "code": "8014",
+        "stock": 15,
+        "id": 5
+    },
+    {
+        "title": "Papelera",
+        "description": "Papelera resistente para residuos domésticos",
+        "price": 300,
+        "thumbnail": "linkdeimagen",
+        "code": "8015",
+        "stock": 10,
+        "id": 6
+    },
+    {
+        "title": "Cepillo de dientes eléctrico",
+        "description": "Cepillo de dientes con tecnología de limpieza avanzada",
+        "price": 2000,
+        "thumbnail": "linkdeimagen",
+        "code": "8016",
+        "stock": 7,
+        "id": 7
+    },
+    {
+        "title": "Sombrero de paja",
+        "description": "Sombrero para protegerse del sol hecho de paja natural",
+        "price": 800,
+        "thumbnail": "linkdeimagen",
+        "code": "8017",
+        "stock": 25,
+        "id": 8
+    },
+    {
+        "title": "Termo",
+        "description": "Termo de acero inoxidable",
+        "price": 1200,
+        "thumbnail": "linkdeimagen",
+        "code": "8018",
+        "stock": 18,
+        "id": 9
+    },
+    {
+        "title": "Mochila escolar",
+        "description": "Mochila resistente y espaciosa para llevar libros y útiles escolares",
+        "price": 1800,
+        "thumbnail": "linkdeimagen",
+        "code": "8019",
+        "stock": 30,
+        "id": 10
+    },
+    {
+        "title": "Set de herramientas básicas",
+        "description": "Incluye herramientas esenciales para tareas domésticas",
+        "price": 3500,
+        "thumbnail": "linkdeimagen",
+        "code": "8020",
+        "stock": 9,
+        "id": 11
+    },
+    {
+        "title": "Lentes de sol",
+        "description": "Lentes con protección UV para días soleados",
+        "price": 600,
+        "thumbnail": "linkdeimagen",
+        "code": "8021",
+        "stock": 22,
+        "id": 12
+    },
+    {
+        "title": "Banco plegable",
+        "description": "Banco compacto y plegable para uso en exteriores",
+        "price": 400,
+        "thumbnail": "linkdeimagen",
+        "code": "8022",
+        "stock": 14,
+        "id": 13
+    },
+    {
+        "title": "Baterías recargables",
+        "description": "Set de baterías recargables AA y AAA",
+        "price": 1000,
+        "thumbnail": "linkdeimagen",
+        "code": "8023",
+        "stock": 11,
+        "id": 14
+    },
+    {
+        "title": "Guantes de jardinería",
+        "description": "Guantes resistentes para trabajar en el jardín",
+        "price": 700,
+        "thumbnail": "linkdeimagen",
+        "code": "8024",
+        "stock": 17,
+        "id": 15
+    }
+]
