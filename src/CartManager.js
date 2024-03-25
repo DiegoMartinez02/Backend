@@ -24,7 +24,7 @@ class CartManager {
 
     addProductToCart(cartId, productId, quantity = 1) {
         const carts = JSON.parse(fs.readFileSync(this.path, 'utf8'));
-        const cart = carts.find(c => c.id === cartId);
+        const cart = carts.find((c) => c.id === Number(cartId));
         if (!cart) {
             throw new Error("Carrito no encontrado");
         }

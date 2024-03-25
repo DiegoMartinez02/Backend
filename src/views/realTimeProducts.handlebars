@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="/socket.io/socket.io.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const socket = io();
+
+            socket.emit("message", "Desde WebSocket")
+
+            socket.on("productUpdated", (data) => {
+                if(data.action === "create" || data.action === "delete" || data.action === "update") {
+                    fetchProducts();
+                }
+            });
+
+            function fetchProducts() {
+                fetch("/api/products")
+                    .then(response => response.json())
+                    .then(products => {
+                        const productList = document.getElementById("productList");
+                        productList.innerHTML = "";
+
+                        products.forEach(product => {
+                            const productElement = document.createElement("li");
+                            productElement.textContent = product.title + "-" + product.price;
+                            productList.appendChild(productElement);
+                        });
+                    })
+                    .catch(error => console.error("Error al cargar los productos:", error));
+            }
+            fetchProducts();
+        });
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul id="productList"></ul>
+</body>
+</html>

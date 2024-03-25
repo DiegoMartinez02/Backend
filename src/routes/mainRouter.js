@@ -4,6 +4,15 @@ const path = require("path");
 const ProductManager = require("../ProductManager");
 const productManager = new ProductManager("./products.json");
 
+router.get("/", async (req, res) => {
+  const products = await productManager.getProducts();
+  res.render("home", {products});
+})
+
+router.get("/realtimeproducts", (req, res) => {
+  res.render("realTimeProducts");
+});
+
 router.get("/products", async (request, response) => {
     try {
       const { limit } = request.query;
