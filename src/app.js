@@ -1,4 +1,5 @@
-//Este commit es de la entrega de websockets, pero tiene errores por solucionar para que todo se cumpla según la consigna. Por eso el nombre de "websockets con errores".
+// Logré corregir el error de realTimeProducts.
+// Después de intentar tantas cosas diferentes lo único que tenía que hacer era sustituir todo el body del main por {{{body}}}
 const express = require("express");
 const handlebars = require("express-handlebars");
 const http = require('http');

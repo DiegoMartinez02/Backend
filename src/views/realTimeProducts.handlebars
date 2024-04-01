@@ -2,6 +2,12 @@
 <html lang="en">
 <head>
     <script src="/socket.io/socket.io.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>realTimeProducts</title>
+</head>
+<body>
+    <ul id="productList"></ul>
     <script>
         document.addEventListener("DOMContentLoaded", () => {
             const socket = io();
@@ -23,7 +29,7 @@
 
                         products.forEach(product => {
                             const productElement = document.createElement("li");
-                            productElement.textContent = product.title + "-" + product.price;
+                            productElement.textContent = product.title + " - $" + product.price;
                             productList.appendChild(productElement);
                         });
                     })
@@ -32,11 +38,5 @@
             fetchProducts();
         });
     </script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <ul id="productList"></ul>
 </body>
 </html>
