@@ -1,13 +1,13 @@
 module.exports = function (io) {
   const express = require("express");
   const router = require("express").Router();
-  const ProductManager = require("../ProductManager");
+  const ProductManager = require("../dao/services/ProductManager");
   const productManager = new ProductManager("./products.json");
 
   router.get("/", async (req, res) => {
     try {
       const { limit } = req.query;
-      let products = await productManager.getProducts();
+      let products = await productManager.getAll();
       if (limit) {
         products = products.slice(0, Number(limit));
       }

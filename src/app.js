@@ -41,8 +41,7 @@ io.of("/admin").on("connection", (socket) => {
 
 async function connectDB() {
   try {
-    await mongoose.connect("mongodb+srv://diegomartinezdm0925:fjB5UzoguQjVnu5v@cluster0.nlyp41n.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
-    );
+    await mongoose.connect("mongodb+srv://diegomartinezdm0925:fjB5UzoguQjVnu5v@cluster0.nlyp41n.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0");
     console.log("Conectado a la database correctamente");
   } catch (error){
     console.log("Error al conectarse a la database: " + error);

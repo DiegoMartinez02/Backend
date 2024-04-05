@@ -1,5 +1,5 @@
 const express = require('express');
-const CartManager = require('../CartManager');
+const CartManager = require('../dao/services/CartManager');
 const cartManager = new CartManager('./carts.json');
 
 const router = express.Router();
@@ -16,7 +16,7 @@ router.post('/', (req, res) => {
 router.get('/:cid', (req, res) => {
     try {
         const {cid} = req.params;
-        const cartProducts = cartManager.getCartProducts(cid);
+        const cartProducts = cartManager.getCartById(cid);
         if (!cartProducts) {
             return res.status(404).json({error: "Carrito no encontrado"});
         }
